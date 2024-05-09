@@ -1,0 +1,76 @@
+body{
+    display: flex; /* Makes the body container display elements flexibly */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically (optional) */
+    min-height: 100vh; /* Ensures the form stays centered even on longer screens */
+    background-image: url("Images/body_background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(23, 6, 6, 0.461);
+    z-index : -1;
+}
+
+  
+.container {
+    /* background-image:linear-gradient(to right, rgb(253, 254, 254),rgb(200, 237, 241)); */
+    background-color: rgba(246, 240, 240, 0.192); /*Optional background color for the container*/
+    padding: 30px; /* Adds some padding around the form */
+    border-radius: 10px; /* Rounds the corners of the container */
+    text-align: center;
+}
+  
+.form-title {
+    color: rgb(19, 17, 17) ;
+    font-size: 20px;;
+    font-weight: bold; /* Makes the title text bold */
+}
+  
+.form input {
+    width: 90%; /* Makes the input fields full width */
+    padding: 10px;
+    margin-bottom: 15px; /* Adds some space between input fields */
+    border: 1px solid #130e0e; /* Adds a border to the input fields */
+    border-radius: 5px;
+    transform: scale(1) ;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.form input:hover{
+    transform: scale(1.05);
+}
+  
+.form button {
+    background-color: rgb(31, 92, 33); /* Green color for the button */
+    color: rgb(6, 34, 1); /* White text color for the button */
+    padding: 8px 28px; /* Adds padding to the button */
+    border: none; /* Removes the default border from the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+.form button:hover {
+    background-color: #104612; /* Darker green on hover */
+    color: white;
+}
+
+.redirect {
+    text-align: center; /* Centers the redirect message */
+    transform : scale(1);
+}
+
+.redirect:hover{
+    transform: scale(1.09);
+}
+
+.redirect a {
+    color: rgb(31, 92, 33); /* Same green color for the link */
+    text-decoration: none; /* Removes underline from the link */
+}

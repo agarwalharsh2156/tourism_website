@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/body_background.jpg);
+    background-blend-mode:overlay;
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.529);
+  }
+
+header {
+    display: flex; /* Arrange elements horizontally */
+    flex-wrap: wrap;
+    align-items: center; /* Vertically align content */
+    padding: 10px 20px;
+    margin:0;
+  }
+
+  .logo {
+    flex: 0 0 100px; /* Fixed width for logo */
+    margin-right: 20px;
+  }
+  
+  .site-name {
+    flex: 1; /* Flexible width for site name */
+  }
+  
+  .search-bar {
+
+    flex: 1; /* Flexible width for search bar */
+    text-align:left; /* Align search bar to the center */
+    margin-left: 20px;
+    border-radius: 5px;
+  }
+
+  form{
+    display: flex;
+    gap:5px;
+  }
+  
+  nav {
+    flex: 0 0 auto; /* Flexible width for navigation links */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    background-color: hsla(120, 12%, 5%, 0.517); /* Green color for the button */
+    color: khaki;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;;
+  }
+  
+  nav a:hover {
+    background-color: khaki; /* Darker green on hover */
+    color: hsla(120, 12%, 5%, 0.496);
+    border-radius: 5px;
+  }
+  
+  input[type="text"] {
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"]{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+.content{
+    height:120vh;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#content-img{
+  height:80%;
+  width:40%;
+}
+
+#content-img img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0.75px rgba(7, 6, 6, 0.279);
+}
+
+#content{
+  height: 80%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 253, 0.454);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+footer{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 3px;
+  background-color: rgba(240, 248, 255, 0.479);
+}
